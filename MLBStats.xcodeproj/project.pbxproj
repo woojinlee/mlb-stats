@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		064F4E5416C70999537992A0 /* Pods_MLBStats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7246B4F3487DBACA8F473D /* Pods_MLBStats.framework */; };
 		F1AA80522BA2981E00A05407 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AA80512BA2981E00A05407 /* AppDelegate.swift */; };
 		F1AA80542BA2981E00A05407 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AA80532BA2981E00A05407 /* SceneDelegate.swift */; };
 		F1AA80562BA2981E00A05407 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AA80552BA2981E00A05407 /* ViewController.swift */; };
@@ -36,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A7246B4F3487DBACA8F473D /* Pods_MLBStats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MLBStats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D356BA98897A44CD58B848 /* Pods-MLBStats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLBStats.debug.xcconfig"; path = "Target Support Files/Pods-MLBStats/Pods-MLBStats.debug.xcconfig"; sourceTree = "<group>"; };
+		8763939951E7F9611A244B27 /* Pods-MLBStats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLBStats.release.xcconfig"; path = "Target Support Files/Pods-MLBStats/Pods-MLBStats.release.xcconfig"; sourceTree = "<group>"; };
 		F1AA804E2BA2981E00A05407 /* MLBStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLBStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1AA80512BA2981E00A05407 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1AA80532BA2981E00A05407 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				064F4E5416C70999537992A0 /* Pods_MLBStats.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44DACB785964F21864533493 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84D356BA98897A44CD58B848 /* Pods-MLBStats.debug.xcconfig */,
+				8763939951E7F9611A244B27 /* Pods-MLBStats.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F1AA80452BA2981E00A05407 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +97,8 @@
 				F1AA80672BA2981F00A05407 /* MLBStatsTests */,
 				F1AA80712BA2981F00A05407 /* MLBStatsUITests */,
 				F1AA804F2BA2981E00A05407 /* Products */,
+				44DACB785964F21864533493 /* Pods */,
+				FB3E8F236B91250435C87AC6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +143,14 @@
 			path = MLBStatsUITests;
 			sourceTree = "<group>";
 		};
+		FB3E8F236B91250435C87AC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A7246B4F3487DBACA8F473D /* Pods_MLBStats.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +158,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F1AA80782BA2981F00A05407 /* Build configuration list for PBXNativeTarget "MLBStats" */;
 			buildPhases = (
+				C1E1B53069F22F398AC86BD3 /* [CP] Check Pods Manifest.lock */,
 				F1AA804A2BA2981E00A05407 /* Sources */,
 				F1AA804B2BA2981E00A05407 /* Frameworks */,
 				F1AA804C2BA2981E00A05407 /* Resources */,
+				21056B391236938B0BF9B662 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +278,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21056B391236938B0BF9B662 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MLBStats/Pods-MLBStats-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MLBStats/Pods-MLBStats-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MLBStats/Pods-MLBStats-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1E1B53069F22F398AC86BD3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MLBStats-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F1AA804A2BA2981E00A05407 /* Sources */ = {
@@ -437,12 +505,14 @@
 		};
 		F1AA80792BA2981F00A05407 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84D356BA98897A44CD58B848 /* Pods-MLBStats.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6883Y2VG3J;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MLBStats/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -465,12 +535,14 @@
 		};
 		F1AA807A2BA2981F00A05407 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8763939951E7F9611A244B27 /* Pods-MLBStats.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6883Y2VG3J;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MLBStats/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
