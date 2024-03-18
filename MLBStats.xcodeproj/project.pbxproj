@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		064F4E5416C70999537992A0 /* Pods_MLBStats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7246B4F3487DBACA8F473D /* Pods_MLBStats.framework */; };
+		F13E1A4A2BA7CEF300F78D35 /* MLBAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13E1A492BA7CEF300F78D35 /* MLBAPIService.swift */; };
+		F13E1A4C2BA7CFA500F78D35 /* MLBAPIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13E1A4B2BA7CFA500F78D35 /* MLBAPIRepository.swift */; };
+		F13E1A4F2BA7D0F000F78D35 /* MLBGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13E1A4E2BA7D0F000F78D35 /* MLBGame.swift */; };
 		F1AA80522BA2981E00A05407 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AA80512BA2981E00A05407 /* AppDelegate.swift */; };
 		F1AA80542BA2981E00A05407 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AA80532BA2981E00A05407 /* SceneDelegate.swift */; };
 		F1AA80562BA2981E00A05407 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AA80552BA2981E00A05407 /* ViewController.swift */; };
@@ -40,6 +43,9 @@
 		3A7246B4F3487DBACA8F473D /* Pods_MLBStats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MLBStats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D356BA98897A44CD58B848 /* Pods-MLBStats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLBStats.debug.xcconfig"; path = "Target Support Files/Pods-MLBStats/Pods-MLBStats.debug.xcconfig"; sourceTree = "<group>"; };
 		8763939951E7F9611A244B27 /* Pods-MLBStats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLBStats.release.xcconfig"; path = "Target Support Files/Pods-MLBStats/Pods-MLBStats.release.xcconfig"; sourceTree = "<group>"; };
+		F13E1A492BA7CEF300F78D35 /* MLBAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLBAPIService.swift; sourceTree = "<group>"; };
+		F13E1A4B2BA7CFA500F78D35 /* MLBAPIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLBAPIRepository.swift; sourceTree = "<group>"; };
+		F13E1A4E2BA7D0F000F78D35 /* MLBGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLBGame.swift; sourceTree = "<group>"; };
 		F1AA804E2BA2981E00A05407 /* MLBStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLBStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1AA80512BA2981E00A05407 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1AA80532BA2981E00A05407 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +96,24 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F13E1A482BA7CDE400F78D35 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F13E1A4D2BA7D0E600F78D35 /* Model */,
+				F13E1A492BA7CEF300F78D35 /* MLBAPIService.swift */,
+				F13E1A4B2BA7CFA500F78D35 /* MLBAPIRepository.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F13E1A4D2BA7D0E600F78D35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F13E1A4E2BA7D0F000F78D35 /* MLBGame.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F1AA80452BA2981E00A05407 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +139,7 @@
 		F1AA80502BA2981E00A05407 /* MLBStats */ = {
 			isa = PBXGroup;
 			children = (
+				F13E1A482BA7CDE400F78D35 /* Network */,
 				F1AA80512BA2981E00A05407 /* AppDelegate.swift */,
 				F1AA80532BA2981E00A05407 /* SceneDelegate.swift */,
 				F1AA80552BA2981E00A05407 /* ViewController.swift */,
@@ -326,9 +351,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F13E1A4A2BA7CEF300F78D35 /* MLBAPIService.swift in Sources */,
 				F1AA80562BA2981E00A05407 /* ViewController.swift in Sources */,
 				F1AA80522BA2981E00A05407 /* AppDelegate.swift in Sources */,
 				F1AA80542BA2981E00A05407 /* SceneDelegate.swift in Sources */,
+				F13E1A4C2BA7CFA500F78D35 /* MLBAPIRepository.swift in Sources */,
+				F13E1A4F2BA7D0F000F78D35 /* MLBGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
